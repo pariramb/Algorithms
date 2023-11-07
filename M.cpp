@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-// 1 - ind
 
 class PrefixSum {
   size_t size_;
