@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-//  static, 0-ind
 
 template <typename T, T(Operation)(T, T), T Default>
 class SegmentTree {
@@ -87,7 +86,6 @@ T SegmentTree<T, Operation, Default>::Query(const size_t& left, const size_t& ri
   }
   if (left_temp == right_temp) {
     left_result = Operation(left_result, tree_[left_temp]);
-    // right_result = Operation(tree_[right_temp], right_result);
   }
   return Operation(left_result, right_result);
 }
