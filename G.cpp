@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-//  static, 0-ind
 
 template <typename T, T(Operation)(const T&, const T&)>
 class SegmentTree {
