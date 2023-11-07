@@ -2,7 +2,6 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
-// dynamic 0-ind
 
 template <typename T, T(Operation)(const T&, const T&), T DefaultOperation, T(UpdateOp)(const T&, const T&),
           T DefaultUpdate>
