@@ -2,7 +2,6 @@
 #include <vector>
 #include <cmath>
 #include <string>
-//  static, 0-ind
 
 struct Node {
   size_t c_l;
