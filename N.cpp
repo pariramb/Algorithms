@@ -1,4 +1,3 @@
-////// SparseTable многомерная
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -37,7 +36,6 @@ RMQ<T>::RMQ(const size_t& row, const size_t& column) : row_(row), column_(column
     for (size_t i = 1; i < max_pow + 1; ++i) {
       power_of_two_[i] = power_of_two_[i - 1] * 2;
     }
-    // build table
     for (size_t i = 1; i < row_ + 1; ++i) {
       for (size_t j = 1; j < column_ + 1; ++j) {
         std::cin >> sparse_table_[i][j][0][0];
