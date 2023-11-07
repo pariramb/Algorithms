@@ -118,7 +118,6 @@ typename TreapReverse<T, Default>::Node* TreapReverse<T, Default>::Merge(Node* r
     return root1;
   }
   if (root1->prior < root2->prior) {
-    //    Push(root2);
     root2->left = Merge(root1, root2->left);
     if (root2->left) {
       root2->left->parent = root2;
@@ -126,7 +125,6 @@ typename TreapReverse<T, Default>::Node* TreapReverse<T, Default>::Merge(Node* r
     FixNode(root2);
     return root2;
   }
-  //  Push(root1);
   root1->right = Merge(root1->right, root2);
   if (root1->right) {
     root1->right->parent = root1;
