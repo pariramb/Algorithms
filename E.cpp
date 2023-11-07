@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-// 1-ind
 
 template <typename T>
 class BinaryIndexedTree {
